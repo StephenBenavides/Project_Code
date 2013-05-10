@@ -1,0 +1,13 @@
+CREATE DATABASE `cl_db`
+DEFAULT CHARACTER SET utf8
+COLLATE utf8_general_ci;
+
+CREATE TABLE cl_db.list_items
+(
+    ListItemID       INT PRIMARY KEY AUTO_INCREMENT,
+    ListID           INT NOT NULL,
+    ListText         VARCHAR(150),
+    ListItemDone     INT NOT NULL,
+    ListItemPosition INT NOT NULL,
+    ListItemColor    INT NOT NULL
+)
